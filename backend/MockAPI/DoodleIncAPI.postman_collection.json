@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "57fd307d-eae5-44df-ba6e-b08fd6692a68",
+		"name": "DoodleIncAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23181869"
+	},
+	"item": [
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Create Blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"skafshdf39dse3947\",\n    \"title\": \"2nd blog\",\n    \"body\": \"Hello World 3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/blog/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blog",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/blog?limit=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blog"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "3rd",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "skafshdf39243947",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/blog/65b5d7bb7aa4a704422e4e29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blog",
+								"65b5d7bb7aa4a704422e4e29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update blog",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"2nd Blog Updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/blog/65b5d7bb7aa4a704422e4e29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blog",
+								"65b5d7bb7aa4a704422e4e29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Blog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/blog/65b5d7bb7aa4a704422e4e29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"blog",
+								"65b5d7bb7aa4a704422e4e29"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Add Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"kamrul\",\n    \"email\": \"kamrul@gmail.com\",\n    \"body\": \"thakmu na\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comment/65b5d78e7aa4a704422e4e27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"65b5d78e7aa4a704422e4e27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single blog Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comment/65b5d78e7aa4a704422e4e27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"65b5d78e7aa4a704422e4e27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comment/65b60ccde675d72d40fd7214",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"65b60ccde675d72d40fd7214"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"body\": \"1st comment updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/comment/65b60adef8918e038e2b854d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comment",
+								"65b60adef8918e038e2b854d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Men shirt",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "657a84211b2b9c2184dbfaaa",
+							"type": "text"
+						},
+						{
+							"key": "shop",
+							"value": "65769c3d3990e9c93389d624",
+							"type": "text"
+						},
+						{
+							"key": "createdBy",
+							"value": "6574522570d6f3af8f9f4e0e",
+							"type": "text"
+						},
+						{
+							"key": "basePrice",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "200gm",
+							"type": "text"
+						},
+						{
+							"key": "brief",
+							"value": "valo",
+							"type": "text"
+						},
+						{
+							"key": "details",
+							"value": "onek valo",
+							"type": "text"
+						},
+						{
+							"key": "items",
+							"value": " [{\"sku\": \"hdj34m\",\"price\": 500,\"stock\": 2,\"options\": {\"color\": \"red\",\"size\": \"L\",\"sleeve\":  \"full\"}},{\"sku\": \"hdj34l\",\"price\": 550,\"stock\": 3,\"options\": {\"color\": \"red\",\"size\": \"XL\",\"sleeve\":  \"half\"}}]",
+							"type": "text"
+						},
+						{
+							"key": "productImages",
+							"type": "file",
+							"src": "/home/pollob/Downloads/discount.jpg"
+						},
+						{
+							"key": "hasAttribute",
+							"value": "true",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
