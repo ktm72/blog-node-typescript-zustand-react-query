@@ -1,5 +1,5 @@
 import React from "react";
-import { CommentedAt } from "../../utils/Time";
+// import { CommentedAt } from "../../utils/Time";
 import { useCommentsQuery } from "../../services/queries";
 
 type Props = {
@@ -33,7 +33,7 @@ const ShowComments = ({ blogId }: Props): React.ReactNode => {
                 <li key={comment?._id}>
                   <h4>
                     {comment?.name.toUpperCase()} commented -{" "}
-                    <span>{CommentedAt(comment.createdAt)}</span>
+                    {/* <span>{CommentedAt(comment.createdAt)}</span> */}
                   </h4>
 
                   <p>comment: {comment?.body}</p>
